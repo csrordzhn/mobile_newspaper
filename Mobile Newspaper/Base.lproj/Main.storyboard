@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mobile_Newspaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VQp-s4-S34">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-O3-Fig">
+                                        <rect key="frame" x="22" y="20" width="128" height="30"/>
+                                        <state key="normal" title="Get the News"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="To7-6d-knc"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zoW-Ie-TKr">
+                                        <rect key="frame" x="373" y="0.0" width="365" height="512"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="40" width="353" height="2"/>
+                                        </variation>
+                                    </progressView>
+                                    <webView contentMode="center" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxe-zs-LIN">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="512"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                        <dataDetectorType key="dataDetectorTypes"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="52" width="353" height="503"/>
+                                        </variation>
+                                    </webView>
+                                </subviews>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="22" y="35" width="353" height="555"/>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VQp-s4-S34" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="2DY-bt-4nt"/>
+                            <constraint firstItem="VQp-s4-S34" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="FZ3-IQ-7Yw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VQp-s4-S34" secondAttribute="trailing" constant="2" id="km9-Jg-d9e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VQp-s4-S34" secondAttribute="bottom" constant="10" id="kro-Gr-NSx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VQp-s4-S34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2DY-bt-4nt"/>
+                                <exclude reference="FZ3-IQ-7Yw"/>
+                                <exclude reference="km9-Jg-d9e"/>
+                                <exclude reference="kro-Gr-NSx"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VQp-s4-S34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2DY-bt-4nt"/>
+                                <include reference="FZ3-IQ-7Yw"/>
+                                <include reference="km9-Jg-d9e"/>
+                                <include reference="kro-Gr-NSx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pgProgress" destination="zoW-Ie-TKr" id="A6w-LT-7Ht"/>
+                        <outlet property="wvPDFViewer" destination="Uxe-zs-LIN" id="3y6-Xw-dol"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.5" y="183"/>
+        </scene>
+    </scenes>
+</document>
