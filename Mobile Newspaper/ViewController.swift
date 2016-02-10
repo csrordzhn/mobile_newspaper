@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         pgProgress.setProgress(0.0, animated: true)
         
         let api_url = getAPIURL()
+        pgProgress.setProgress(0.2, animated: true)
         getNewspaperURL(api_url)
     }
     
@@ -35,7 +36,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
 
     func webViewDidFinishLoad(webView: UIWebView)
     {
-        print("Done")
+        //print("Done")
         pgProgress.setProgress(1.0, animated: true)
         sleep(2)
         pgProgress.hidden = true
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "GET"
+        request.HTTPMethod = "POST"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
         
         let task = session.dataTaskWithRequest(request) {
@@ -61,12 +62,13 @@ class ViewController: UIViewController, UIWebViewDelegate {
             
             let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
             
+            self.pgProgress.setProgress(0.6, animated: true)
             //going the string parsing way to start
             let start = dataString!.rangeOfString("http")
             let finish = dataString!.rangeOfString("pdf")
             let urlLength = finish.location + finish.length - start.location
             let pdfURL = dataString!.substringWithRange(NSRange(location: start.location, length: urlLength))
-            
+            self.pgProgress.setProgress(0.8, animated: true)
             let url = NSURL(string: pdfURL)
             let request: NSURLRequest = NSURLRequest(URL: url!)
             

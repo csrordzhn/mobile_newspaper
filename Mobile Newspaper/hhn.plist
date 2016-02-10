@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>api_url</key>
-	<string>https://handheldnews.herokuapp.com/api/v1/test_url</string>
+	<string>https://handheldnews.herokuapp.com/api/v1/pdf_url</string>
 </dict>
 </plist>
