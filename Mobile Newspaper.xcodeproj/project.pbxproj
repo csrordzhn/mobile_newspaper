@@ -15,7 +15,7 @@
 		DBA741C11C661F4C0043DEE2 /* Mobile_NewspaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA741C01C661F4C0043DEE2 /* Mobile_NewspaperTests.swift */; };
 		DBA741CC1C661F4C0043DEE2 /* Mobile_NewspaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA741CB1C661F4C0043DEE2 /* Mobile_NewspaperUITests.swift */; };
 		DBA741DA1C66220B0043DEE2 /* hhn.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBA741D91C66220B0043DEE2 /* hhn.plist */; };
-		DBB6F9831C6B3355008D42C0 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB6F9821C6B3355008D42C0 /* launch.png */; };
+		DBCF47F11C6DD5D8008F3C18 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCF47F01C6DD5D8008F3C18 /* launch.png */; };
 		DBD8DC4E1C685FEC0084D3A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DBD8DC4D1C685FEC0084D3A4 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		DBA741CB1C661F4C0043DEE2 /* Mobile_NewspaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_NewspaperUITests.swift; sourceTree = "<group>"; };
 		DBA741CD1C661F4C0043DEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA741D91C66220B0043DEE2 /* hhn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hhn.plist; sourceTree = "<group>"; };
-		DBB6F9821C6B3355008D42C0 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = "../../../Desktop/OneDrive-2016-02-10/launch.png"; sourceTree = "<group>"; };
+		DBCF47F01C6DD5D8008F3C18 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		DBD8DC4D1C685FEC0084D3A4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,8 +104,8 @@
 		DBA741AA1C661F4C0043DEE2 /* Mobile Newspaper */ = {
 			isa = PBXGroup;
 			children = (
-				DBB6F9821C6B3355008D42C0 /* launch.png */,
 				DBA741AB1C661F4C0043DEE2 /* AppDelegate.swift */,
+				DBCF47F01C6DD5D8008F3C18 /* launch.png */,
 				DBA741AD1C661F4C0043DEE2 /* ViewController.swift */,
 				DBA741AF1C661F4C0043DEE2 /* Main.storyboard */,
 				DBA741B21C661F4C0043DEE2 /* Assets.xcassets */,
@@ -239,7 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB6F9831C6B3355008D42C0 /* launch.png in Resources */,
+				DBCF47F11C6DD5D8008F3C18 /* launch.png in Resources */,
 				DBD8DC4E1C685FEC0084D3A4 /* .gitignore in Resources */,
 				DBA741B61C661F4C0043DEE2 /* LaunchScreen.storyboard in Resources */,
 				DBA741DA1C66220B0043DEE2 /* hhn.plist in Resources */,
